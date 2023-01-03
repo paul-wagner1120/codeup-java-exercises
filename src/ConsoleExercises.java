@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
-
+// Exercises #1
         double pi = 3.14159;
 
     System.out.format("The value of pi is approximately %.2f\n", pi);
 
-
+// Explore the scanner class
     System.out.print("Enter Number Here: ");
     int userInput = scanner.nextInt();
     System.out.println("You entered: " + userInput + "!");
@@ -24,8 +24,14 @@ public class ConsoleExercises {
         scanner.nextLine();
         System.out.print("Enter a sentence: ");
         String sentence = scanner.nextLine();
-        System.out.printf("Your sentence is as follows: %s", sentence);
+        System.out.printf("Your sentence is as follows: %s %n", sentence);
 
-
+// Calculate the perimeter and area of codeup's classrooms
+        System.out.print("Enter Width: ");
+        int width = Integer.parseInt(scanner.nextLine());
+        System.out.print("Enter Length: ");
+        int length = Integer.parseInt(scanner.nextLine());
+        int perimeter = (width * 2) + (length * 2);
+        System.out.printf("Your room perimeter is %s!", perimeter);
     }
 }
