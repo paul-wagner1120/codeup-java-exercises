@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main (String[] args){
         System.out.println("Hello, World!");
@@ -79,10 +81,6 @@ public class HelloWorld {
 //        integer overflow error. code will not run while data type is not correct
 
 
-
-
-
-
-
     }
 }
+
