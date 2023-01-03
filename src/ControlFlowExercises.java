@@ -14,10 +14,10 @@ public class ControlFlowExercises {
 //        }
 
         // do while loop
-//        i = 0;
-//        do {
-//            System.out.println(i += 2);
-//        } while (i < 100);
+        i = 0;
+        do {
+            System.out.println(i += 2);
+        } while (i < 100);
 
 
         i = 105;
