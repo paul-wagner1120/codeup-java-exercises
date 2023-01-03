@@ -32,6 +32,8 @@ public class ConsoleExercises {
         System.out.print("Enter Length: ");
         int length = Integer.parseInt(scanner.nextLine());
         int perimeter = (width * 2) + (length * 2);
-        System.out.printf("Your room perimeter is %s!", perimeter);
+        int area = (width * length);
+        System.out.printf("Your room perimeter is %s! %n", perimeter);
+        System.out.printf("Your room area is %s!", area);
     }
 }
