@@ -118,7 +118,7 @@ public class ControlFlowExercises {
             System.out.println("Would you like to continue? Yes or No");
             answer = scanner.next();
 
-        } while (answer.toLowerCase().equals("yes"));
+        } while (answer.equalsIgnoreCase("yes"));
 
     }
 }
