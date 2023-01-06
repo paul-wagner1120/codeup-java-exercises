@@ -66,6 +66,28 @@ public class MethodsExercises {
         } while (answer.equalsIgnoreCase("yes"));
     }
 
+    public static void dice() {
+        String repeat;
+        do {
+            System.out.println("Please enter a number to represent the number of sides on the pair of dice: ");
+
+            int userInput = scanner.nextInt();
+
+            int dice1 = (int) Math.floor(Math.random() * (userInput) + 1);
+            int dice2 = (int) Math.floor(Math.random() * (userInput) + 1);
+
+            System.out.println("Your first value is " + dice1);
+            System.out.println("Your first value is " + dice2);
+
+            System.out.println("Would you like to continue? Yes or No");
+            repeat = scanner.next();
+
+        } while (repeat.equalsIgnoreCase("yes"));
+    }
+
+
+
+
     public static void main(String[] args) {
 //        addition(4,4);
 //        System.out.println(subtraction(4,4));
@@ -74,6 +96,7 @@ public class MethodsExercises {
 //        modulus(20,5);
 //        fancyMultiply(4,5);
 //        System.out.println(getInteger(1,10));
-        factorial();
+//        factorial();
+        dice();
     }
 }
