@@ -20,7 +20,7 @@ public class HelloWorld {
 
 //        long myNumber;
 //        System.out.println(myNumber);
-//        nothing to print out
+//        myNumber has no assigned value - nothing to print out
 
 //        long myNumber = 3.14;
 //        System.out.println(myNumber);
