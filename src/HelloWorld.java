@@ -1,86 +1,81 @@
-import java.util.Scanner;
-
 public class HelloWorld {
-    public static void main (String[] args){
-        System.out.println("Hello, World!");
+
+    public static void main(String[] args) {
+
+        System.out.println("Hello World");
+        System.out.print("Hello World \n");
+
 
         int myFavoriteNumber = 4;
         System.out.println(myFavoriteNumber);
 
-        String myString = "I love pizza!";
+        String myString = "My favorite number is 4";
+//        String myString2 = 2;
         System.out.println(myString);
 
-//        String myString = 'I';
-//        System.out.println(myString);
-//        does not run b/c the variable type defined is a string not a character
+        // String variable types will not accept character values;
+        // String variable types will not accept numbers or decimals... recommends using String.valueOf()
 
-//        String myString = 3.14159;
-//        System.out.println(myString);
-//        does not run b/c the variable type is defined as a string not a float or double
-
-//        long myNumber;
-//        System.out.println(myNumber);
-//        myNumber has no assigned value - nothing to print out
-
-//        long myNumber = 3.14;
-//        System.out.println(myNumber);
-//        doesnt run b/c long is not the proper variable type for decimals
-
-//        long myNumber = 123L;
-//        System.out.println(myNumber);
-
-//        long myNumber = 123;
-//        System.out.println(myNumber);
-
-//        #8 = b/c int and long are for whole numbers and not decimal numbers
-
-//        float myNumber = 3.14;
-//        System.out.println(myNumber);
-//        throws an error
-
-        float myNumber = 3.14f;
+        long myNumber = 123;
         System.out.println(myNumber);
-//        1st way to fix - add 'f' to the end of the value
-//        2nd way to fix - change variable type to double
+        // without assigning a number to the long variable... it throws an error saying it has not been initialized
+        // long and int data types do not accept decimal values
+
+//        float myNumber2 = 3.14;
+        // 2 ways to fix the float; 1. add a "f" to the end of your 3.14; 2. change the float to a double
+
+        float myNumber3 = 3.14f;
+        double myNumber4 = 3.14;
+
 
 //        int x = 5;
 //        System.out.println(x++);
 //        System.out.println(x);
-//        logs variable before adding 1
 
-//        int x = 5;
-//        System.out.println(++x);
-//        System.out.println(x);
-//        adds 1 and then logs variable
+        // the first system out is only printing the value of x. it is not accounting for the "++" feature. the code is reading left to right and it prints the variable before it adds 1 to it.
+        // the second system out prints the final value of x after the "++" is applied to the variable
 
-//        String class = "hello class";
+//        int y = 5;
+//        System.out.println(++y);
+//        System.out.println(y);
 
-//        #11 - you cannot name a variable class
+        // the first system out has the "++" feature before the variable, therefore it modifies the variable by adding 1 to the y variable and then prints the variable, the second system out prints the same variable b/c there were no changes to it.
+
+//        String class;
+
+        // class is a reserved word
 
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
-//        code breaks - cannot convert a string to a number at this point
+//
+//
+//        int three = (int) "three";
+
+        // int variables cannot accept sting values
 
 //        int x = 4;
-//        x += 5;
+//        x = x + 5;
+//        System.out.println(x);
+//        x = x+=5;
 //        System.out.println(x);
 
 //        int x = 3;
 //        int y = 4;
-//        y *= x;
+////        y = y * x;
+//          y*=x;
 //        System.out.println(y);
 
-        int x = 10;
-        int y = 2;
-        x /= y;
-        y -= x;
-        System.out.println(y);
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
+//
+//        System.out.println(x);
+//        System.out.println(y);
 
-//        byte num = 130;
-//        integer overflow error. code will not run while data type is not correct
-
+        // if you exceed the data type capacity, it will throw an error and not run or compile properly
 
     }
-}
 
+}

@@ -1,36 +1,40 @@
 import java.util.Scanner;
 
 public class ConsoleExercises {
-    public static void main (String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-// Exercises #1
-        double pi = 3.14159;
 
-    System.out.format("The value of pi is approximately %.2f\n", pi);
+//        double pi = 3.14159;
+//
+//        System.out.format("The value of pi is approximately %.2f.%n",pi);
+//
+//        System.out.println("Please enter a number: ");
+//        int userInput = scanner.nextInt();
+//        System.out.println("You entered: " + userInput);
+//
+//        System.out.println("Please enter 3 words");
+//        String word1;
+//        String word2;
+//        String word3;
+//
+//        word1 = scanner.next();
+//        word2 = scanner.next();
+//        word3 = scanner.next();
+//
+//        System.out.println(word1);
+//        System.out.println(word2);
+//        System.out.println(word3);
+//
+//        // if you enter more than 3 words, only the 1st three words will be logged due to using the scanner.next() method;
+//        scanner.nextLine();
+//        System.out.println("Please enter a sentence:");
+//        String mySentence = scanner.nextLine();
+//        System.out.println(mySentence);
 
-// Explore the scanner class
-    System.out.print("Enter Number Here: ");
-    int userInput = scanner.nextInt();
-    System.out.println("You entered: " + userInput + "!");
-// if you enter something other than a number, it throws an error "input mismatch exception"
-
-        System.out.print("Enter 3 words separated by spaces: ");
-        String firstWord = scanner.next();
-        String secondWord = scanner.next();
-        String thirdWord = scanner.next();
-
-        System.out.printf("Your words are:%n %s %n %s %n %s %n", firstWord, secondWord, thirdWord);
-
-        scanner.nextLine();
-        System.out.print("Enter a sentence: ");
-        String sentence = scanner.nextLine();
-        System.out.printf("Your sentence is as follows: %s %n", sentence);
-
-// Calculate the perimeter and area of codeup's classrooms
-        System.out.print("Enter Width: ");
-        int width = Integer.parseInt(scanner.nextLine());
-        System.out.print("Enter Length: ");
+        System.out.println("Enter length: ");
         int length = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter width: ");
+        int width = Integer.parseInt(scanner.nextLine());
         int perimeter = (width * 2) + (length * 2);
         int area = (width * length);
         System.out.printf("Your room perimeter is %s! %n", perimeter);
