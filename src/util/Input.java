@@ -26,7 +26,7 @@ public class Input {
     }
 
     public Boolean yesNo(){
-        System.out.println("Yes or No?");
+        System.out.println("Would you like to continue? Enter Yes or No?");
         String input = this.scanner.nextLine();
         input = input.toLowerCase();
         return switch (input) { //enhanced switch statement
