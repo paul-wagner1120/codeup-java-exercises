@@ -1,6 +1,3 @@
-|paul                |2435256             |
-|bugs                |24632234            |
-|tom                 |24262465            |
-|jerry               |245262454           |
-|pilsbury doughboy   |1800ghostbuster     |
-|steven              |928483              |
+|paul                |3929328             |
+|john smith          |3939393             |
+|smitty smith        |9239389             |

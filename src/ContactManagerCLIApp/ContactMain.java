@@ -42,7 +42,21 @@ public class ContactMain {
                 Contact.searchContacts(name);
                 contactsApp();
             }
+            case ("delete"), ("4") -> {
+                Contact.showContacts();
+                System.out.println("Enter the contact you wish to delete");
+                String name = Input.getString();
+                Contact.deleteContact(name);
+                Contact.showContacts();
+                contactsApp();
+            }
+            case ("exit"), ("5") ->
+                System.out.println("Thanks for using the Contacts List Manager");
 
+            default -> {
+                System.out.println(userInput + " is not a valid input. Please try again.");
+                contactsApp();
+            }
         }
 
 
@@ -64,7 +78,7 @@ public class ContactMain {
 //            Contact.searchContacts(name);
 //            contactsApp();
 //        }
-
+//
     } // end of contacts app curly brace
 
 
